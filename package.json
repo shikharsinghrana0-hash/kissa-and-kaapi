@@ -1,7 +1,8 @@
 {
-  "name": "linden-and-rye-cafe",
+  "name": "kissa-and-kaapi",
   "private": true,
   "version": "1.0.0",
+  "author": "Shikhar Singh Rana",
   "type": "module",
   "scripts": {
     "dev": "vite",

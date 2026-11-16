@@ -99,6 +99,22 @@ export function Footer() {
           <span>
             © {new Date().getFullYear()} {CAFE_INFO.name}. Small-batch coffee &amp; bakehouse.
           </span>
+          <span className="mono-label" style={{ letterSpacing: '0.08em' }}>
+            Designed &amp; Developed by{' '}
+            <a
+              href="https://github.com/shikharsinghrana0-hash"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: 'var(--ink)',
+                fontWeight: 500,
+                textDecoration: 'underline',
+                textUnderlineOffset: '3px',
+              }}
+            >
+              Shikhar Singh Rana
+            </a>
+          </span>
           <a href="#top" className="mono-label">
             Back to top ↑
           </a>

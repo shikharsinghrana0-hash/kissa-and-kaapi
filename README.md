@@ -106,3 +106,11 @@ To access the backoffice panel:
 2. Enter owner credentials:
    - **Email**: `owner@kissaandkaapi.in`
    - **Passcode**: `KissaOwner#2026`
+
+---
+
+## 👨‍💻 Developer
+
+**Shikhar Singh Rana**
+- **GitHub**: [@shikharsinghrana0-hash](https://github.com/shikharsinghrana0-hash)
+- **Project**: Kissa & Kaapi Specialty Cafe Website
