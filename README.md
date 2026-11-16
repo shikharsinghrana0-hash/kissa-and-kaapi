@@ -130,8 +130,9 @@ To access the backoffice panel:
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Developer & Organization
 
-**Shikhar Singh Rana**
-- **GitHub**: [@shikharsinghrana0-hash](https://github.com/shikharsinghrana0-hash)
-- **Project**: Kissa & Kaapi Specialty Cafe Website
+- **Developer**: **Shikhar Singh Rana** ([@shikharsinghrana0-hash](https://github.com/shikharsinghrana0-hash))
+- **Organization / Mentorship**: **SQROCK IT SOLUTION**
+- **Project**: Kissa & Kaapi Specialty Cafe Web Application
+- **Special Thanks**: Grateful to the team and mentors at **SQROCK IT SOLUTION** for guidance, design reviews, and engineering direction during the development of this project.
