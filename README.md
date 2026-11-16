@@ -21,7 +21,15 @@ Designed with an editorial, warm Kinfolk/Pinterest aesthetic: natural earth-and-
 | :---: | :---: |
 | ![Order Tray](docs/screenshots/03-order-tray.png) | ![Visual Gallery](docs/screenshots/04-visual-gallery.png) |
 
-| **05. Secured Owner / Admin Backoffice** | **06. Developer Credits by Shikhar Singh Rana** |
+| **05. Table Reservation Booking Form** | **06. Instant Confirmed Table Pass** |
+| :---: | :---: |
+| ![Table Reservation Form](docs/screenshots/07-table-reservation.png) | ![Confirmed Table Pass](docs/screenshots/08-confirmed-table-pass.png) |
+
+| **07. Seasonal Menu & Indian Rupee (₹) Pricing** | **08. Interactive In-App Demo Tour** |
+| :---: | :---: |
+| ![Seasonal Menu INR](docs/screenshots/09-seasonal-menu.png) | ![Interactive Demo Tour](docs/screenshots/10-interactive-demo-tour.png) |
+
+| **09. Secured Owner / Admin Backoffice** | **10. Developer Credits by Shikhar Singh Rana** |
 | :---: | :---: |
 | ![Admin Backoffice](docs/screenshots/05-admin-portal.png) | ![Developer Credit](docs/screenshots/06-developer-credit.png) |
 
@@ -97,7 +105,7 @@ Designed with an editorial, warm Kinfolk/Pinterest aesthetic: natural earth-and-
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/kissa-and-kaapi.git
+git clone https://github.com/shikharsinghrana0-hash/kissa-and-kaapi.git
 
 # Navigate into the project folder
 cd kissa-and-kaapi
@@ -130,9 +138,8 @@ To access the backoffice panel:
 
 ---
 
-## 👨‍💻 Developer & Organization
+## 👨‍💻 Developer
 
-- **Developer**: **Shikhar Singh Rana** ([@shikharsinghrana0-hash](https://github.com/shikharsinghrana0-hash))
-- **Organization / Mentorship**: **SQROCK IT SOLUTION**
-- **Project**: Kissa & Kaapi Specialty Cafe Web Application
-- **Special Thanks**: Grateful to the team and mentors at **SQROCK IT SOLUTION** for guidance, design reviews, and engineering direction during the development of this project.
+**Shikhar Singh Rana**
+- **GitHub**: [@shikharsinghrana0-hash](https://github.com/shikharsinghrana0-hash)
+- **Project**: Kissa & Kaapi Specialty Cafe Website
