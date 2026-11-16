@@ -1,0 +1,136 @@
+:root {
+  color-scheme: light dark;
+
+  /* Raw palette tokens */
+  --paper-light: #f5f0e8;
+  --paper-dark: #151210;
+
+  --surface-light: #ede6da;
+  --surface-dark: #1d1815;
+
+  --elevated-light: #fbf8f3;
+  --elevated-dark: #25201c;
+
+  --ink-light: #1e1916;
+  --ink-dark: #ede5d8;
+
+  --muted-light: #5f544b;
+  --muted-dark: #afa396;
+
+  --accent-light: #9a492e;
+  --accent-dark: #cf8062;
+
+  --accent-ink-light: #fbf8f3;
+  --accent-ink-dark: #151210;
+
+  --sage-light: #4a5744;
+  --sage-dark: #93a38a;
+
+  --border-light: rgba(30, 25, 22, 0.13);
+  --border-dark: rgba(237, 229, 216, 0.14);
+
+  --border-strong-light: rgba(30, 25, 22, 0.28);
+  --border-strong-dark: rgba(237, 229, 216, 0.3);
+
+  --danger-light: #a63226;
+  --danger-dark: #eb7c6e;
+
+  --scrollbar-track-light: #ece5d8;
+  --scrollbar-track-dark: #1c1714;
+  --scrollbar-thumb-light: #7c7065;
+  --scrollbar-thumb-dark: #6b6056;
+
+  /* Semantic defaults (light) with automatic fallback */
+  --bg: var(--paper-light);
+  --surface: var(--surface-light);
+  --elevated: var(--elevated-light);
+  --ink: var(--ink-light);
+  --muted: var(--muted-light);
+  --accent: var(--accent-light);
+  --accent-ink: var(--accent-ink-light);
+  --sage: var(--sage-light);
+  --border: var(--border-light);
+  --border-strong: var(--border-strong-light);
+  --danger: var(--danger-light);
+  --scrollbar-track: var(--scrollbar-track-light);
+  --scrollbar-thumb: var(--scrollbar-thumb-light);
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Fluid Editorial Scale (max <= 2.5x min per WCAG 1.4.4) */
+  --text-hero: clamp(2.5rem, 1.55rem + 4vw, 5.15rem);
+  --text-h2: clamp(1.95rem, 1.4rem + 2.2vw, 3.35rem);
+  --text-h3: clamp(1.35rem, 1.15rem + 0.8vw, 1.85rem);
+  --text-lead: clamp(1rem, 0.94rem + 0.35vw, 1.2rem);
+
+  /* Spacing & Layout */
+  --container-max: 82rem;
+  --gutter: clamp(1.15rem, 3vw, 3rem);
+  --section-space: clamp(4.5rem, 8vw, 8.5rem);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-pill: 999px;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: var(--paper-dark);
+    --surface: var(--surface-dark);
+    --elevated: var(--elevated-dark);
+    --ink: var(--ink-dark);
+    --muted: var(--muted-dark);
+    --accent: var(--accent-dark);
+    --accent-ink: var(--accent-ink-dark);
+    --sage: var(--sage-dark);
+    --border: var(--border-dark);
+    --border-strong: var(--border-strong-dark);
+    --danger: var(--danger-dark);
+    --scrollbar-track: var(--scrollbar-track-dark);
+    --scrollbar-thumb: var(--scrollbar-thumb-dark);
+  }
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: var(--paper-dark);
+  --surface: var(--surface-dark);
+  --elevated: var(--elevated-dark);
+  --ink: var(--ink-dark);
+  --muted: var(--muted-dark);
+  --accent: var(--accent-dark);
+  --accent-ink: var(--accent-ink-dark);
+  --sage: var(--sage-dark);
+  --border: var(--border-dark);
+  --border-strong: var(--border-strong-dark);
+  --danger: var(--danger-dark);
+  --scrollbar-track: var(--scrollbar-track-dark);
+  --scrollbar-thumb: var(--scrollbar-thumb-dark);
+}
+
+@supports (color: light-dark(white, black)) {
+  :root {
+    --bg: light-dark(var(--paper-light), var(--paper-dark));
+    --surface: light-dark(var(--surface-light), var(--surface-dark));
+    --elevated: light-dark(var(--elevated-light), var(--elevated-dark));
+    --ink: light-dark(var(--ink-light), var(--ink-dark));
+    --muted: light-dark(var(--muted-light), var(--muted-dark));
+    --accent: light-dark(var(--accent-light), var(--accent-dark));
+    --accent-ink: light-dark(var(--accent-ink-light), var(--accent-ink-dark));
+    --sage: light-dark(var(--sage-light), var(--sage-dark));
+    --border: light-dark(var(--border-light), var(--border-dark));
+    --border-strong: light-dark(var(--border-strong-light), var(--border-strong-dark));
+    --danger: light-dark(var(--danger-light), var(--danger-dark));
+    --scrollbar-track: light-dark(var(--scrollbar-track-light), var(--scrollbar-track-dark));
+    --scrollbar-thumb: light-dark(var(--scrollbar-thumb-light), var(--scrollbar-thumb-dark));
+  }
+}
