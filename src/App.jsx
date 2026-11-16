@@ -11,6 +11,7 @@ import { ReservationSection } from './components/ReservationSection';
 import { OrderDrawer } from './components/OrderDrawer';
 import { AuthModal } from './components/AuthModal';
 import { OwnerPortalModal } from './components/OwnerPortalModal';
+import { DemoGuideModal } from './components/DemoGuideModal';
 import { Footer } from './components/Footer';
 
 function readStoredJson(key, fallback) {
@@ -41,6 +42,7 @@ export function App() {
   const [trayOpen, setTrayOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
   const [ownerOpen, setOwnerOpen] = useState(false);
+  const [demoOpen, setDemoOpen] = useState(false);
   const [user, setUser] = useState(null);
 
   const [priceOverrides, setPriceOverrides] = useState(() =>
@@ -212,6 +214,30 @@ export function App() {
     } catch {}
   };
 
+  const handleLoadSampleOrder = () => {
+    setCart({
+      'coffee-pourover': 1,
+      'dessert-croissant': 1,
+    });
+    setTrayOpen(true);
+  };
+
+  const handlePrefillReservation = () => {
+    const el = document.getElementById('reserve');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      const nameInput = document.getElementById('res-name');
+      const emailInput = document.getElementById('res-email');
+      const phoneInput = document.getElementById('res-phone');
+      const msgInput = document.getElementById('res-message');
+      if (nameInput && !nameInput.value) nameInput.value = 'Rohan Mehra';
+      if (emailInput && !emailInput.value) emailInput.value = 'rohan@example.in';
+      if (phoneInput && !phoneInput.value) phoneInput.value = '+91 98450 77112';
+      if (msgInput && !msgInput.value) msgInput.value = 'Window counter seat for quiet reading.';
+      if (nameInput) nameInput.focus();
+    }, 400);
+  };
+
   const closeOwnerPortal = () => {
     setOwnerOpen(false);
     if (window.location.hash === '#owner-portal') {
@@ -289,6 +315,26 @@ export function App() {
         onUpdatePrice={handleUpdatePrice}
         onResetPrices={handleResetPrices}
       />
+
+      <DemoGuideModal
+        isOpen={demoOpen}
+        onClose={() => setDemoOpen(false)}
+        onLoadSampleOrder={handleLoadSampleOrder}
+        onPrefillReservation={handlePrefillReservation}
+        onOpenOwnerPortal={() => setOwnerOpen(true)}
+        theme={theme}
+        onToggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
+      />
+
+      <button
+        type="button"
+        className="demo-floating-pill"
+        onClick={() => setDemoOpen(true)}
+        aria-label="Open Interactive Demo Tour"
+      >
+        <span aria-hidden="true">✨</span>
+        <span>Demo Guide</span>
+      </button>
     </>
   );
 }

@@ -6,6 +6,27 @@ Designed with an editorial, warm Kinfolk/Pinterest aesthetic: natural earth-and-
 
 ---
 
+## 🌟 Live Demo & Visual Showcase
+
+- **Live GitHub Pages URL**: [https://shikharsinghrana0-hash.github.io/kissa-and-kaapi/](https://shikharsinghrana0-hash.github.io/kissa-and-kaapi/)
+- **Interactive In-App Tour**: Click the **✨ Demo Guide** button in the bottom-left corner of the site to test 1-click sample orders, prefilled table bookings, theme switching, or admin backoffice tools.
+
+### 📸 Demo Gallery
+
+| **01. Homepage & Editorial Hero (Daylight)** | **02. Evening Dark Mode & Order Badge** |
+| :---: | :---: |
+| ![Hero Light Mode](docs/screenshots/01-hero-light.png) | ![Dark Mode](docs/screenshots/02-dark-mode.png) |
+
+| **03. Online Pickup Ordering Tray** | **04. 12-Frame Visual Journal Gallery** |
+| :---: | :---: |
+| ![Order Tray](docs/screenshots/03-order-tray.png) | ![Visual Gallery](docs/screenshots/04-visual-gallery.png) |
+
+| **05. Secured Owner / Admin Backoffice** | **06. Developer Credits by Shikhar Singh Rana** |
+| :---: | :---: |
+| ![Admin Backoffice](docs/screenshots/05-admin-portal.png) | ![Developer Credit](docs/screenshots/06-developer-credit.png) |
+
+---
+
 ## ☕ Key Features
 
 1. **Homepage & Hero Section**:

@@ -277,6 +277,34 @@ dialog::backdrop {
   background-color: var(--surface);
 }
 
+/* Floating Interactive Demo Pill */
+.demo-floating-pill {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s var(--ease-out), background-color 0.2s ease;
+  touch-action: manipulation;
+}
+
+.demo-floating-pill:hover {
+  transform: translateY(-2px);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
 /* Scroll Reveal */
 .reveal {
   opacity: 1;
