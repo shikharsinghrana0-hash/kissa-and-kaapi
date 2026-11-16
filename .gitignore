@@ -20,6 +20,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Archives
+*.zip
+
 # OS & Editor
 .DS_Store
 Thumbs.db
